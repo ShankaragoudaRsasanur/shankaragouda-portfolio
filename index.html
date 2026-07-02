@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shankaragouda | Portfolio</title>
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -20,40 +25,26 @@
         <!-- Navigation Links -->
         <ul class="flex gap-8 text-gray-700 font-medium">
             <li>
-                <a href="#" class="hover:text-blue-600 transition duration-300">
-                    Home
-                </a>
+               <a href="#home">Home</a>
             </li>
-
             <li>
-                <a href="#" class="hover:text-blue-600 transition duration-300">
-                    About
-                </a>
+                <a href="#about">About</a>
             </li>
-
             <li>
-                <a href="#" class="hover:text-blue-600 transition duration-300">
-                    Skills
-                </a>
+                <a href="#skills">Skills</a>
             </li>
-
             <li>
-                <a href="#" class="hover:text-blue-600 transition duration-300">
-                    Projects
-                </a>
+                <a href="#projects">Projects</a>
             </li>
-
             <li>
-                <a href="#" class="hover:text-blue-600 transition duration-300">
-                    Contact
-                </a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
 
     </div>
 </nav>
 <!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-6 py-20">
+<section id="home" class="max-w-7xl mx-auto px-6 py-20">
 
     <div class="flex flex-col md:flex-row items-center justify-between">
 
@@ -103,6 +94,82 @@
 
     </div>
 
+</section>
+<!-- About Section -->
+<section id="about" class="bg-gray-100 py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-4xl font-bold text-center text-blue-600">
+            About Me
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-10 items-center mt-12">
+
+            <!-- Left Side -->
+            <div class="flex justify-center">
+
+                <img src="images/profile.jpg"
+                     alt="Profile"
+                     class="w-80 rounded-2xl shadow-xl">
+
+            </div>
+
+            <!-- Right Side -->
+            <div>
+
+                <h3 class="text-3xl font-bold">
+                    I'm Shankaragouda
+                </h3>
+
+                <p class="text-gray-600 mt-6 leading-8">
+                    I am passionate about Frontend Development.
+                    I enjoy building responsive and modern websites
+                    using HTML, Tailwind CSS, and JavaScript.
+                </p>
+
+                <div class="mt-8 space-y-4">
+
+                    <p>
+                        <span class="font-bold">Name :</span>
+                        Shankaragouda
+                    </p>
+
+                    <p>
+                        <span class="font-bold">Location :</span>
+                        Karnataka, India
+                    </p>
+
+                    <p>
+                        <span class="font-bold">Education :</span>
+                        B.E. Electronics and Communication Engineering
+                    </p>
+
+                    <p>
+                        <span class="font-bold">Skills :</span>
+                        HTML, Tailwind CSS, JavaScript
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills" class="h-screen bg-white">
+    <h1 class="text-5xl text-center pt-20">Skills</h1>
+</section>
+
+<section id="projects" class="h-screen bg-gray-100">
+    <h1 class="text-5xl text-center pt-20">Projects</h1>
+</section>
+
+<section id="contact" class="h-screen bg-white">
+    <h1 class="text-5xl text-center pt-20">Contact</h1>
 </section>
 
 <script src="script.js"></script>
