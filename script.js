@@ -97,3 +97,34 @@ if (message === "") {
 
 alert("Form Submitted");
 });
+const searchProject = document.getElementById("searchProject");
+searchProject.addEventListener("keyup", function () {
+    const projectCards = document.querySelectorAll(".project-card");
+
+});
+const viewDetails = document.querySelectorAll(".viewDetails");
+const projectModal = document.getElementById("projectModal");
+const closeModal = document.getElementById("closeModal");
+viewDetails.forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+        projectModal.classList.remove("hidden");
+
+    });
+
+});
+closeModal.addEventListener("click", function () {
+
+    projectModal.classList.add("hidden");
+
+});
+projectModal.addEventListener("click", function (event) {
+
+    if (event.target === projectModal) {
+
+        projectModal.classList.add("hidden");
+
+    }
+
+});

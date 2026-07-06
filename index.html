@@ -30,6 +30,7 @@
             <li><a class="nav-link" href="#about">About</a></li>
             <li><a class="nav-link" href="#skills">Skills</a></li>
             <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#certificates">Certificates</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
 
@@ -54,6 +55,7 @@
             <li class="py-2"><a class="nav-link" href="#about">About</a></li>
             <li class="py-2"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="py-2"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="py-2"><a class="nav-link" href="#certificates">Certificates</a></li>
             <li class="py-2"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
 
@@ -345,6 +347,13 @@
         <h2 class="text-4xl font-bold text-center text-blue-600">
             My Projects
         </h2>
+        <div class="mt-8 mb-8 flex justify-center">
+    <input
+        id="searchProject"
+        type="text"
+        placeholder="Search projects..."
+        class="w-full max-w-md border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+</div>
 
         <p class="text-center text-gray-500 mt-4">
             Here are some projects I have built using HTML, Tailwind CSS, and JavaScript.
@@ -353,8 +362,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
             <!-- Project Card 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-
+           <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
                 <img src="images/property.jpg.jpg"
                      alt="Portfolio Project"
                      class="w-full h-52 object-cover">
@@ -384,24 +392,28 @@
 
 </div>
 
-                    <div class="mt-5 flex gap-4">
+     <div class="mt-5 flex gap-4">
 
-                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                            GitHub
-                        </a>
+    <button id="portfolioBtn"class="viewDetails bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+        View Details
+    </button>
 
-                        <a href="#" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white">
-                            Live Demo
-                        </a>
+    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg">
+        GitHub
+    </a>
 
-                    </div>
+    <a href="#" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg">
+        Live Demo
+    </a>
+
+</div>
 
                 </div>
 
             </div>
 
             <!-- Project Card 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+            <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
 
                 <img src="images/property-06.jpg"
                      alt="Villa Booking"
@@ -417,17 +429,19 @@
                         A modern villa booking website with responsive UI.
                     </p>
 
-                    <div class="mt-5 flex gap-4">
+                            <div class="mt-5 flex gap-4">
+                                  <button id="villaBtn"class="viewDetails bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                                    View Details </button>
 
-                        <a href="https://github.com/ShankaragoudaRsasanur/villa-project" class="bg-blue-600 text-white px-4 py-2 rounded-lg">
-                            GitHub
-                        </a>
+                                <a href="https://github.com/ShankaragoudaRsasanur/villa-project" class="bg-blue-600 text-white px-4 py-2 rounded-lg">
+                                    GitHub
+                                </a>
 
-                        <a href="#" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg">
-                            Live Demo
-                        </a>
+                                <a href="#" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg">
+                                    Live Demo
+                                </a>
 
-                    </div>
+                            </div>
 
                 </div>
 
@@ -570,6 +584,40 @@
     class="hidden fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition">
     ↑
 </button>
+<!-- Project Details Modal -->
+<div id="projectModal"
+     class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+
+    <div class="bg-white p-8 rounded-xl w-[500px]">
+
+        <h2 class="text-3xl font-bold text-blue-600">
+            Portfolio Website
+        </h2>
+
+        <p class="mt-4 text-gray-600">
+            This portfolio was built using HTML, Tailwind CSS and JavaScript.
+            It is fully responsive and contains projects, skills,
+            certificates and a contact form.
+        </p>
+
+        <h3 class="font-bold mt-6">
+            Technologies
+        </h3>
+
+        <ul class="list-disc ml-6 mt-2">
+            <li>HTML5</li>
+            <li>Tailwind CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <button id="closeModal"
+                class="mt-8 bg-red-600 text-white px-6 py-2 rounded-lg">
+            Close
+        </button>
+
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
