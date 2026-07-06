@@ -26,16 +26,20 @@
 
         <!-- Desktop Menu -->
         <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
 
-    <li><a class="nav-link" href="#home">Home</a></li>
-    <li><a class="nav-link" href="#about">About</a></li>
-    <li><a class="nav-link" href="#skills">Skills</a></li>
-    <li><a class="nav-link" href="#projects">Projects</a></li>
-    <li><a class="nav-link" href="#contact">Contact</a></li>
+        <!-- Dark Mode Button -->
+        <button id="themeBtn"
+            class="hidden md:block ml-4 bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 transition">
+            🌙
+        </button>
 
-</ul>
-
-        <!-- Hamburger Button -->
+        <!-- Mobile Menu Button -->
         <button id="menuBtn" class="md:hidden text-3xl">
             ☰
         </button>
@@ -43,22 +47,17 @@
     </div>
 
     <!-- Mobile Menu -->
-    
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
 
-        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
+        <ul class="flex flex-col text-center py-4">
+            <li class="py-2"><a class="nav-link" href="#home">Home</a></li>
+            <li class="py-2"><a class="nav-link" href="#about">About</a></li>
+            <li class="py-2"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="py-2"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="py-2"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
 
-    <ul class="flex flex-col text-center py-4">
-
-        <li class="py-2"><a class="nav-link" href="#home">Home</a></li>
-        <li class="py-2"><a class="nav-link" href="#about">About</a></li>
-        <li class="py-2"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="py-2"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="py-2"><a class="nav-link" href="#contact">Contact</a></li>
-
-    </ul>
-
-</div>
-    
+    </div>
 
 </nav>
 <!-- Hero Section -->
