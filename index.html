@@ -26,12 +26,15 @@
 
         <!-- Desktop Menu -->
         <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#certificates">Certificates</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <a class="nav-link menu-link" href="#about">About</a>
+
+<a class="nav-link menu-link" href="#skills">Skills</a>
+
+<a class="nav-link menu-link" href="#projects">Projects</a>
+
+<a class="nav-link menu-link" href="#certificates">Certificates</a>
+
+<a class="nav-link menu-link" href="#contact">Contact</a>
         </ul>
 
         <!-- Dark Mode Button -->
@@ -392,13 +395,13 @@
 
     <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
         Tailwind CSS
-    </span>
+                    </span>
 
-    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">
-        Bootstrap
-    </span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">
+                            Bootstrap
+                    </span>
 
-</div>
+                        </div>
 
                             <div class="mt-5 flex gap-4">
                                   <button id="villaBtn"class="viewDetails bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
@@ -436,6 +439,26 @@
         <p class="text-center text-gray-500 mt-4">
             Feel free to contact me for internships or frontend development opportunities.
         </p>
+        <div class="text-center mt-6 space-y-2">
+
+    <p>
+        📧
+        <a href="mailto:shankargoudasasanur34@gmail.com"
+           class="text-blue-600 hover:underline">
+            shankargoudasasanur34@gmail.com
+        </a>
+    </p>
+
+    <p>
+        💼
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"
+           target="_blank"
+           class="text-blue-600 hover:underline">
+            LinkedIn Profile
+        </a>
+    </p>
+
+</div>
 
         <form id="contactForm" class="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg">
 
@@ -481,21 +504,77 @@
             My Certificates
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
-            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
-                <h3 class="text-xl font-bold">NPTEL Cloud Computing</h3>
-                <p class="text-gray-600 mt-2">NPTEL Certification</p>
+            <!-- Cloud -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+               <img src="images/certificate(1).png"
+     alt="NPTEL Cloud Computing"
+     class="w-full h-64 object-contain bg-white p-2">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">NPTEL Cloud Computing</h3>
+
+                    <p class="text-gray-600 mt-2">
+                        NPTEL Certification
+                    </p>
+
+                    <a href="images/certificate(1).png"
+                       target="_blank"
+                       class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg">
+                        View Certificate
+                    </a>
+                </div>
+
             </div>
 
-            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
-                <h3 class="text-xl font-bold">NPTEL IoT</h3>
-                <p class="text-gray-600 mt-2">NPTEL Certification</p>
+            <!-- IoT -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img src="images/certificate(2).png"
+                     alt="IoT Certificate"
+                    class="w-full h-64 object-contain bg-white p-2">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">NPTEL IoT</h3>
+
+                    <p class="text-gray-600 mt-2">
+                        NPTEL Certification
+                    </p>
+
+                    <a href="images/certificate(2).png"
+                       target="_blank"
+                       class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg">
+                        View Certificate
+                    </a>
+                </div>
+
             </div>
 
-            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
-                <h3 class="text-xl font-bold">Java Full Stack Internship</h3>
-                <p class="text-gray-600 mt-2">Vision Astra EV Academy</p>
+            <!-- Internship -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img src="images/internship certificate.png"
+                     alt="Internship Certificate"
+                     class="w-full h-64 object-contain bg-white p-2">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">
+                        Java Full Stack Internship
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Vision Astra EV Academy
+                    </p>
+
+                    <a href="images/internship certificate.png"
+                       target="_blank"
+                       class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg">
+                        View Certificate
+                    </a>
+                </div>
+
             </div>
 
         </div>
@@ -503,7 +582,6 @@
     </div>
 
 </section>
-
 <!-- Contact Section -->
 <section id="contact">
 

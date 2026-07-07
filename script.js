@@ -128,3 +128,13 @@ projectModal.addEventListener("click", function (event) {
     }
 
 });
+const menuLinks = document.querySelectorAll(".menu-link");
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", function () {
+    sections.forEach(function(section){
+
+    console.log(section.id);
+
+});
+
+});
